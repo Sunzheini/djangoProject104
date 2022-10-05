@@ -33,7 +33,12 @@ class Employees(models.Model):
         auto_now=True,
     )
 
+    @property
+    def fullname(self):
+        return f'{self.first_name} {self.last_name}'
 
+    def __str__(self):
+        return f'If: {self.pk}; Name: {self.fullname}'
 
 
 
