@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+
+    {% for employee in employees %}
+        <li>
+        <div>
+            {{ employee.first_name }} {{ employee.last_name }}
+        </div>
+        <div>
+            {{ employee.years_of_experience }} {{ employee.age }}
+        </div>
+        </li>
+    {% endfor %}
+
+        {% for employee in employees2 %}
+        <li>
+        <div>
+            {{ employee.first_name }} {{ employee.last_name }}
+        </div>
+        <div>
+            {{ employee.years_of_experience }} {{ employee.age }}
+        </div>
+        </li>
+    {% endfor %}
+
+</ul>
+
+</body>
+</html>

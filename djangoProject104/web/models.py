@@ -12,7 +12,7 @@ class Employees(models.Model):
     )
 
     level = models.CharField(
-        max_length=15,
+        max_length=20,
     )
 
     age = models.IntegerField()
@@ -39,8 +39,6 @@ class Employees(models.Model):
 
     def __str__(self):
         return f'If: {self.pk}; Name: {self.fullname}'
-
-
 
 
 
